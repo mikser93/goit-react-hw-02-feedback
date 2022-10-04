@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { Component } from 'react';
 import s from './Statistics.module.css';
 
@@ -32,5 +32,13 @@ class Statistics extends Component {
     );
   }
 }
+
+Statistics.propTypews = {
+  state: PropTypes.shape({
+      good: PropTypes.number,
+      neutral: PropTypes.number,
+      bad: PropTypes.number,
+  }),
+};
 
 export default Statistics;
